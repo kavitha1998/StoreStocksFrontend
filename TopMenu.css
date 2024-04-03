@@ -1,0 +1,56 @@
+/* TopMenu.css */
+.top-menu {
+  background: rgb(0,144,236);
+background: linear-gradient(90deg, rgba(0,144,236,1) 26%, rgba(149,221,236,1) 88%);
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between; /* Align items to the start and end of the container */
+}
+
+.top-menu img {
+  height: 30px; /* Set the height of the logo */
+}
+
+.top-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  display: flex; /* Use flexbox to align items horizontally */
+}
+
+.top-menu li {
+  margin-right: 20px; /* Add margin to separate menu items */
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.top-menu li:last-child {
+  margin-right: 0; /* Remove margin from the last menu item */
+}
+
+.top-menu li:hover {
+  text-decoration: none;
+}
+
+/* TopMenu.css */
+.home {
+  
+  color: #fff; /* Text color */
+  padding: 10px 20px; /* Padding around the menu bar */
+}
+
+.menu-list {
+  list-style-type: none; /* Remove bullet points from the list */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.menu-link {
+  text-decoration: none; /* Remove underline from links */
+  color: #fff; /* Text color of links */
+  margin-right: 20px; /* Space between menu items */
+}
+
+

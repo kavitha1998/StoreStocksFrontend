@@ -1,0 +1,83 @@
+/* Sidebar.css */
+
+.sidebar {
+  width: 200px;
+  padding: 10px;
+  background: rgb(213, 225, 233);
+  /*background: linear-gradient(90deg, rgba(0,144,236,1) 26%, rgba(149,221,236,1) 88%);*/
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  color: rgb(32, 89, 222);
+  padding: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+/*.sidebar li:hover {
+  background-color: hsl(208, 85%, 73%);
+}*/
+
+
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: -100%; /* Adjusted to display on the right side */
+  background-color: #73c1e8;
+  width: 200px; /* Fixed width */
+  height: 130px; /* Fixed height */
+  padding: 10px;
+  /*box-shadow: 0 2px 5px rgba(141, 210, 248, 0.5);*/
+  z-index: 1; /* Ensure dropdown is above other elements */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.sidebar li:hover .dropdown {
+  display: block;
+}
+
+.dropdown li {
+  padding: 5px 0;
+  margin-left: 20px;
+}
+
+.dropdown li a {
+  color: white;
+  text-decoration: none;
+}
+
+/*.dropdown li:hover {
+  background-color: #b040a3;
+}*/
+/* Add this CSS to your stylesheet */
+
+.view {
+  list-style-type: none; /* Remove default list bullet */
+  padding: 0; /* Remove default padding */
+}
+
+.view li {
+  display: inline-block; /* Display list items horizontally */
+  margin-right: 10px; /* Add space between list items */
+}
+
+.view li:last-child {
+  margin-right: 0; /* Remove margin from the last list item */
+}
+
+.view li a {
+  text-decoration: none; /* Remove underline from links */
+  color: rgb(32, 89, 222); /* Set link color */
+}
+
+/*.view li a:hover {
+  color: #a73f3f; 
+}*/

@@ -1,0 +1,102 @@
+/* home.css */
+body{
+    background-color: #f0f0f0;
+}
+/* Slide container */
+.welcome-message{
+    text-align: center;
+    color:  #f12727;
+}
+.explore-message{
+    text-align: center;
+}
+.home-slider {
+    position: relative;
+    width: 100%;
+  }
+  
+  /* Slide styles */
+  .slide {
+    display: none;
+    height: 300px; /* Adjust the height as needed */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Active slide */
+  .slide.active {
+    display: block;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    cursor: pointer;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding:10px;
+    border-radius: 50%;
+    z-index: 1; /* Ensure arrows are above the slides */
+  }
+  
+  /* Hover effect for the right arrow only */
+  .right-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .left-arrow,
+  .right-arrow {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -210px;
+  }
+  
+  .left-arrow {
+    left: 20px;
+  }
+  
+  .right-arrow {
+    right: 20px;
+    
+  }
+  
+  /* Container styles */
+.container1,
+.container2,
+.container3 {
+  width: calc(33.33% - 20px); /* Adjust the width of each column */
+  height: 400px;
+  margin: 20px 10px; /* Add margin between columns */
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: inline-block; /* Display containers as inline-block elements */
+  vertical-align: top; /* Align containers to the top */
+}
+
+.container1,
+.container2,
+.container3 {
+  width: 30%; /* Adjust the width of each container as needed */
+}
+
+.half-image {
+  width: 100%;
+  height:100%;
+}
+
+.half-image img {
+  width: 100%;
+  height: 50%;
+}
+
+.other-content {
+  width: 50%; /* Adjust the width of other content as needed */
+}
